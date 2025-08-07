@@ -18,4 +18,4 @@ jobs:
         python-version: '3.x'
 
     - name: Run certificate check script
-      run: import ssl.py
+      run: import_ssl.py

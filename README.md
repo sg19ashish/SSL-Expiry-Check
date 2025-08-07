@@ -9,3 +9,6 @@ input_file_path = 'C:\\<dir>\\<dir>\\urls.txt'   ## Provide the path to the text
 The output would be generated here-
 output_file_path = 'C:\\<dir>\\<dir>\\certificate_expiry_dates.csv'  ## Provide the path to the CSV file to write the results
 
+Sample input file - urls.txt
+Sample Output file - certificate_expiry_dates.csv
+

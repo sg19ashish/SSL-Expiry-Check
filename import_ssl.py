@@ -11,11 +11,11 @@ def get_certificate_expiry_date(hostname):
             expiry_date = datetime.strptime(cert['notAfter'], '%b %d %H:%M:%S %Y %Z')
             return expiry_date
 
-# Define the file paths
+# Define the file paths when running in local machine
 #input_file_path = 'C:\\<dir>\\<dir>\\urls.txt'   ## Provide the path to the text file containing the URLs
 #output_file_path = 'C:\\<dir>\\<dir>\\certificate_expiry_dates.csv'  ## Provide the path to the CSV file to write the results
 
-# Define the file paths (relative to repo root)
+# Define the file paths (relative to repo root when running in GIT actions"
 input_file_path = 'urls.txt'
 output_file_path = 'certificate_expiry_dates.csv'
 
@@ -40,3 +40,4 @@ with open(output_file_path, 'w', newline='') as csvfile:
         except Exception as e:
 
             writer.writerow({'URL': url, 'Expiry Date': f"Error: {e}"})
+

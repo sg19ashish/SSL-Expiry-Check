@@ -1,8 +1,8 @@
 # SSL-Expiry-Check
 This will check expiry for all URL's which needs to be provided in  a text file
 
-The URL's needs to be added in the text file. It can be https or https. 
-The script will ignore https URL's
+The URL's needs to be added in the text file. It can be https or https. The script will ignore http URL's
+
 # Define the file paths
 input_file_path = 'C:\\<dir>\\<dir>\\urls.txt'   ## Provide the path to the text file containing the URLs
 

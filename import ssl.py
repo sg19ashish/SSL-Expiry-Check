@@ -12,8 +12,13 @@ def get_certificate_expiry_date(hostname):
             return expiry_date
 
 # Define the file paths
-input_file_path = 'C:\\<dir>\\<dir>\\urls.txt'   ## Provide the path to the text file containing the URLs
-output_file_path = 'C:\\<dir>\\<dir>\\certificate_expiry_dates.csv'  ## Provide the path to the CSV file to write the results
+#input_file_path = 'C:\\<dir>\\<dir>\\urls.txt'   ## Provide the path to the text file containing the URLs
+#output_file_path = 'C:\\<dir>\\<dir>\\certificate_expiry_dates.csv'  ## Provide the path to the CSV file to write the results
+
+# Define the file paths (relative to repo root)
+input_file_path = 'urls.txt'
+output_file_path = 'certificate_expiry_dates.csv'
+
 
 # Read URLs from the text file
 with open(input_file_path, 'r') as file:
@@ -33,4 +38,5 @@ with open(output_file_path, 'w', newline='') as csvfile:
             expiry_date = get_certificate_expiry_date(hostname)
             writer.writerow({'URL': url, 'Expiry Date': expiry_date})
         except Exception as e:
+
             writer.writerow({'URL': url, 'Expiry Date': f"Error: {e}"})

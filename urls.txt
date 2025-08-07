@@ -1,0 +1,5 @@
+www.google.com
+www.yahoo.com
+https://www.playoffstatus.com/
+https://mail.google.com/
+https://copilot.cloud.microsoft/
